@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New todo-list</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="drag.js" defer></script>
+    <script src="todo.js" defer></script>
+</head>
+<body>
+    <div class="board">
+        <form id="todo-form">
+            <input type="text" placeholder="New TODO..." id="todo-input" />
+            <button type="submit">Add+</button>
+        </form>
+        <div class="lanes">
+            <div class="swim-lane" id="todo-lane">
+                <h3 class="heading">TODO</h3>
+
+                <p class="task" draggable="true">Take the dog for a walk</p>
+                <p class="task" draggable="true">Organize a memorable celebration</p>
+                <p class="task" draggable="true">Read 20 pages of the book 'Atomic Habits</p>
+            </div>
+            <div class="swim-lane">
+                <h3 class="heading">DOING</h3>
+                <p class="task" draggable="true">Meeting with the mentor at my place</p>
+            </div>
+            <div class="swim-lane">
+                <h3 class="heading">DONE</h3>
+                <p class="task" draggable="true">Running 8 Olympic laps</p>
+                <p class="task" draggable="true">Meeting with the manager at the restaurant</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
